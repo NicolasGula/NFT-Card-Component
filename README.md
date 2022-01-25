@@ -34,8 +34,8 @@ Los usuarios deben ser capaces de:
 
 ### Links
 
-- Solucion URL : [Add solution URL here](https://your-solution-url.com)
-- Sitio URL : [Add live site URL here](https://your-live-site-url.com)
+- Solucion URL : [Add solution URL here](https://github.com/NicolasGula/NFT-Card-Component)
+- Sitio URL : [Add live site URL here](https://nicolasgula.github.io/NFT-Card-Component/)
 
 ### Utilice
 
