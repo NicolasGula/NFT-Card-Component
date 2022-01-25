@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+#card{
+    background-color:hsl(216, 50%, 16%);
+    width: 245px;
+    height: 445px;
+    padding: 1.2em;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4%;
+    box-shadow: 0px 0px 15px 5px hsl(0, 0%, 0%);
+}
+
+/* Wrap the two images */
+.img-container{
+    position: relative;
+    border-radius: 5%;
+}
+
+/* NFT img responsive */
+.img-container #image-equilibrium{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+/* Put icon view in center of overlay */
+.img-container #eye{
+    width: 20%;
+    height: 20%;
+    margin:40% 40%;
+}
+
+/* Hide the icon view and position it  */
+.eye-hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    display: none;
+}
+
+/* Display the icon view and the background */
+.img-container:hover .eye-hide{
+    display: block;
+    background-color: hsla(178, 100%, 50%, 0.466);
+    cursor: pointer;
+}
+
+#title{
+    color:hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+#title:hover, #author:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#description, #days, #creation{
+    color:hsl(215, 51%, 70%);
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.img-icon{
+    margin-right: 0.5em;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 0;
+    font-size: 15px;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+#price{
+    font-weight:400;
+    color:hsl(178, 100%, 50%);
+}
+
+hr{
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color:hsl(215, 32%, 27%);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 1em;
+}
+
+footer > img{
+    max-width: 10%;
+    height: auto;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    margin-right: 0.9em; 
+
+}
+
+footer > #author{
+    color:hsl(0, 0%, 100%);
+    margin-left: 0.2em;
+    font-size: 1em;
+}
+
+@media only screen and (max-width:576px){
+    #card{
+        padding: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #card{
+        padding: 6%;
+    }
+    #image-equilibrium{
+        min-width: 95%;
+        height: auto;
+        border-radius: 5%;
+        margin: auto;
+    }
+}
